@@ -1,0 +1,39 @@
+📌 Model: Random Forest Classifier
+Best Parameters: {'bootstrap': False, 'max_depth': 15, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 50}
+Accuracy on Test: 0.4918
+
+📄 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.67      0.97      0.79        29
+           1       0.14      0.08      0.11        12
+           2       0.12      0.11      0.12         9
+           3       0.00      0.00      0.00         7
+           4       0.00      0.00      0.00         4
+
+    accuracy                           0.49        61
+   macro avg       0.19      0.23      0.20        61
+weighted avg       0.36      0.49      0.41        61
+
+
+📌 Model: SVM Classifier
+Best Parameters: {'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}
+Accuracy on Test: 0.5246
+
+📄 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.97      0.82        29
+           1       0.40      0.17      0.24        12
+           2       0.20      0.11      0.14         9
+           3       0.08      0.14      0.11         7
+           4       0.00      0.00      0.00         4
+
+    accuracy                           0.52        61
+   macro avg       0.28      0.28      0.26        61
+weighted avg       0.46      0.52      0.47        61
+
+
+📌 Notes:
+- Dataset imbalance may have affected performance.
+- Consider SMOTE or class_weight for improvements.

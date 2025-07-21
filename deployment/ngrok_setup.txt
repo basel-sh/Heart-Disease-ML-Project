@@ -1,0 +1,14 @@
+# Ngrok Setup Instructions
+
+1. Download Ngrok from: https://ngrok.com/download
+2. Unzip and place ngrok.exe somewhere on your system (e.g., C:\ngrok).
+3. Open CMD and run:
+
+   ngrok config add-authtoken YOUR_AUTHTOKEN_HERE
+
+4. To expose your Streamlit app:
+   - Navigate to your UI folder: cd ui
+   - Run Streamlit: streamlit run app.py
+   - In another terminal, run: ngrok http 8501
+
+This will give you a public URL to access your Streamlit app remotely.
